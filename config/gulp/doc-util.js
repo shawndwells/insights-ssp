@@ -80,7 +80,7 @@ module.exports = {
 
   logIntroduction: function (message) {
 
-    message = message || 'U.S. Web Design System Documentation';
+    message = message || 'Red Hat ATO Pathways';
 
     gutil.log(
       chalk.yellow('v' + pkg.version),
