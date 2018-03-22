@@ -1,5 +1,5 @@
 # Site settings
-title:  U.S. Web Design System
+title:  Red Hat's ATO Pathways
 description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 google_analytics_ua: UA-48605964-43
 components_url: 'https://components.designsystem.digital.gov'
@@ -30,14 +30,14 @@ jekyll_get:
     decode_content: true
 
 repos:
-- name: U.S. Web Design System
-  description: Main repository for the U.S. Web Design System package
+- name: U.S. Web Desqqign System
+  description: Main repository for the U.S. W23deb Design System package
   url: https://github.com/uswds/uswds
-- name: U.S. Web Design System Documentation
-  description: Documentation for the U.S. Web Design System
+- name: U.S. Web De23d23dsign System Documentation
+  description: Documentation for the U.S. Web D23d23design System
   url: https://github.com/uswds/uswds-site
-- name: U.S. Web Design System Assets
-  description: U.S. Web Design System visual design assets
+- name: U.S. Web Desiwedgn System Assets
+  description: U.S. Web Dqwdesign System visual design assets
   url: https://github.com/uswds/uswds-assets
 
 sass:
