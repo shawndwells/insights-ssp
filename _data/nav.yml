@@ -1,5 +1,9 @@
 primary:
   - href: /getting-started/
+  - href: /ato-documents/
+  - href: /product-documents/
+  - href: /nowhere
+  - href: /nowhere
   - href: /components/
   - href: /page-templates/
   - href: /design-principles/
@@ -15,6 +19,14 @@ mobile:
   - href: /design-principles/
   - href: /whats-new/
     collapsible: true
+
+Product Documents:
+  - text: Overview
+    href: /product-documents/
+  - text: RHEL6
+  - href: /product-documents/rhel7/
+  - text: --
+  - text: OpenShift v3
 
 UI components:
   - text: Overview
