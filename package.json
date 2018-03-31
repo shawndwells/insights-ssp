@@ -94,7 +94,7 @@
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.6.0",
     "normalize.css": "^3.0.3",
-    "npm": "^5.7.1",
+    "npm": "^5.8.0",
     "nswatch": "^0.2.0",
     "politespace": "^0.1.4",
     "run-sequence": "^1.1.5",
