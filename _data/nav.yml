@@ -24,7 +24,9 @@ Product Documents:
   - text: Overview
     href: /product-documents/
   - text: RHEL6
-  - href: /product-documents/rhel7/
+    href: /product-documents/rhel6/
+  - text: RHEL7
+    href: /product-documents/rhel7/
   - text: --
   - text: OpenShift v3
 
