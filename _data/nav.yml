@@ -41,6 +41,14 @@ ATO Documents:
   - text: Security Awareness & Training Plan
     href: /ato-documents/security-awareness-and-training-plan/
 
+ATO Documents:
+  - text: Overview
+    href: /ato-documents/
+  - text: Vulnerability Management Plan
+    href: /ato-documents/vulnerability-management-plan/
+  - text: Security Awareness & Training Plan
+    href: /ato-documents/security-awareness-and-training-plan/
+
 UI components:
   - text: Overview
     href: /components/
