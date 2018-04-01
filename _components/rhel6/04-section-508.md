@@ -10,4 +10,4 @@ Section 508 requires that government agencies ensure that their software is acce
 
 | Product | VPAT |
 |:-------:|:----:|
-| Red Hat Enterprise Linux 7.x | [Download](https://www.redhat.com/en/files/resources/li-red-hat-enterprise-linux-7-vpat.pdf) |
+| Red Hat Enterprise Linux 7.x | [Download](https://www.redhat.com/en/resources/section-508-vpat6) |
