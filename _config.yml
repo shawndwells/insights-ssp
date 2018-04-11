@@ -3,6 +3,8 @@ title:  Red Hat's ATO Pathways
 description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 google_analytics_ua: UA-48605964-43
 components_url: 'https://components.designsystem.digital.gov'
+host: "0.0.0.0"
+port: 8080
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
