@@ -14,8 +14,8 @@ graphic_list:
         src: img/home/get-started.svg
         alt:
       link:
-        text: Take the first step
-        url: getting-started
+        text: Start from a template
+        url: ato-documents
     - topic: Product Information
       description: Product-specific certification information, such as FIPS 140-2 and template SSP documents.
       image:
@@ -23,23 +23,23 @@ graphic_list:
         alt:
       link:
         text: Browse the components
-        url: components
-    - topic: What’s new
-      description: ....
+        url: product-documents
+    - topic: Secure Baselines
+      description: Authoritative, and supported, configuration baselines to U.S. Government requirements.
+      image:
+        src: img/home/page-templates.svg
+        alt:
+      link:
+        text: Take the first step
+        url: coming-soon
+    - topic: Presentations & Collateral
+      description: Coming Soon!
       image:
         src: img/home/new.svg
         alt:
       link:
         text: See what’s new
-        url: whats-new
-    - topic: Page templates
-      description: ...
-      image:
-        src: img/home/page-templates.svg
-        alt:
-      link:
-        text: Start from a template
-        url: page-templates
+        url: coming-soon
 ---
 <!--
 <div class="usa-grid-full">
