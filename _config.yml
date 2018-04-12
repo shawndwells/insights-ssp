@@ -23,24 +23,15 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/uswds/uswds/releases'
+    json: 'https://api.github.com/repos/RedHatGov/ato-pathways/releases'
   - data: contributing
-    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
-    decode_content: true
-  - data: standards-sites
-    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md'
+    json: 'https://api.github.com/repos/RedHatGov/ato-pathways/contents/CONTRIBUTING.md'
     decode_content: true
 
 repos:
-- name: U.S. Web Desqqign System
-  description: Main repository for the U.S. W23deb Design System package
-  url: https://github.com/uswds/uswds
-- name: U.S. Web De23d23dsign System Documentation
-  description: Documentation for the U.S. Web D23d23design System
-  url: https://github.com/uswds/uswds-site
-- name: U.S. Web Desiwedgn System Assets
-  description: U.S. Web Dqwdesign System visual design assets
-  url: https://github.com/uswds/uswds-assets
+- name: Red Hat's ATO Pathways
+  description: Main GitHub repository
+  url: https://github.com/RedHatGov/ato-pathways
 
 sass:
   load_paths:
