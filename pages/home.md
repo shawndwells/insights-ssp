@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: landing
-title: "U.S. Web Design System: A design system for the federal government"
+title: "Red Hat ATO Pathways"
 class: home
 hero:
   callout: Template A&A Documentation
