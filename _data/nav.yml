@@ -2,13 +2,13 @@ primary:
   - href: /getting-started/
   - href: /ato-documents/
   - href: /product-documents/
-  - href: /nowhere
-  - href: /nowhere
-  - href: /components/
-  - href: /page-templates/
-  - href: /design-principles/
-  - href: /whats-new/
-  - href: /design-principles/
+#  - href: /nowhere
+#  - href: /nowhere
+#  - href: /components/
+#  - href: /page-templates/
+#  - href: /design-principles/
+#  - href: /whats-new/
+#  - href: /design-principles/
 
 mobile:
   - href: /components/
@@ -60,13 +60,8 @@ UI components:
 Getting started:
   - text: Overview
     href: /getting-started/
-  - href: /getting-started/developers/
-  - href: /getting-started/designers/
-  - href: /performance/
-  - href: /getting-started/code-guidelines/
-  - href: /getting-started/video-tutorials/
-  - href: /getting-started/implementations/
-  - href: /getting-started/showcase/
+  - href: /getting-started/auditors/
+  - href: /getting-started/administrators/
 
 Page templates:
   - href: /page-templates/

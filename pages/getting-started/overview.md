@@ -3,7 +3,7 @@ permalink: /getting-started/
 layout: styleguide
 title: Getting started
 category: Getting started
-lead: The U.S. Web Design System provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.
+lead: The Red Hat ATO Pathways microsite provides resources to accelerate your ATO process.
 ---
 
 ## Role-based guides
@@ -11,23 +11,21 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
     <h3>
-      <a href="{{ site.baseurl }}/getting-started/developers/">Developers</a>
+      <a href="{{ site.baseurl }}/getting-started/auditors/">Auditors</a>
     </h3>
-    <p>Get started with our code base one of two ways: downloading the code as a zip file, or installing with npm.</p>
+    <p>Content to assist with system accreditation based on the NIST Risk Management Framework. Materials include Security Requirement Traceability Matrixes, product certification materials (Common Criteria, FIPS), and other ATO package documents.</p>
   </div>
   <div class="usa-width-one-half">
     <h3>
-      <a href="{{ site.baseurl }}/getting-started/designers/">Designers</a>
+      <a href="{{ site.baseurl }}/getting-started/administrators/">Administrators</a>
     </h3>
-    <p>Whether you’re creating simple wireframes or detailed visual design comps, we’ve got you covered with the design resources you need.</p>
+    <p>Resources needed to implement Red Hat technologies in accordance with Government security regulations. Materials include Ansible playbooks, SCAP datastreams, kickstart files, and supporting documentation. .</p>
   </div>
 </div>
 
-## Project wiki
+## Open Source
 
-The team is constantly updating project documentation on GitHub, the primary
-repository for which is the project wiki. Here you can find detailed
-information about our design and development process, and the findings we’ve
-collected from performing user research.
+This microsite, and resources contained within, are reflect open source
+projects on GitHub.
 
-<a href="https://github.com/uswds/uswds/wiki" class="usa-button">View the project wiki on GitHub</a>
+<a href="https://github.com/RedHatGov/ato-pathways" class="usa-button">View the project wiki on GitHub</a>
