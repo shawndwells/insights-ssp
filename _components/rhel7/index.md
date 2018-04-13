@@ -7,20 +7,18 @@ redirect_from:
 layout: styleguide
 title: Red Hat Enterprise Linux 7
 category: Product Documents
-lead: "Inspiring opener."
+lead: "Work in Progress!"
 subnav:
-- text: Change Log
-  href: '#change-log'
-- text: Process Overview
-  href: '#process-overview'
-- text: Patch Implementation
-  href: '#patch-implementation'
-- text: Patch Extension Request
-  href: '#patch-extension-request'
-- text: Compliance Status
-  href: '#compliance-status'
-- text: Contact Information
-  href: '#contact-information'
+- text: Common Criteria
+  href: '#common-criteria'
+- text: FIPS 140-2
+  href: '#fips-140-2'
+- text: USGv6 / IPv6
+  href: '#usgv6-/-ipv6'
+- text: Section 508 / VPAT
+  href: '#section-508'
+- text: Configuration Guides
+  href: '#configuration-guides'
 ---
 
-{% include child-sections.html parent='vpm' %}
+{% include child-sections.html parent='rhel7' %}
