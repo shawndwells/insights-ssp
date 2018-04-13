@@ -7,7 +7,7 @@ redirect_from:
 layout: styleguide
 title: Red Hat Enterprise Linux 6
 category: Product Documents
-lead: "Inspiring opener."
+lead: "Work in Progress!"
 subnav:
 - text: Common Criteria
   href: '#common-criteria'
