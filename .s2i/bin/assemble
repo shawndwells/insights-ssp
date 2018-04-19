@@ -12,7 +12,7 @@ echo "---> Installing npm dependencies ..."
 npm install
 
 echo "---> Building with gulp ..."
-npm run build
+npm run federalist
 
 echo "---> Fix directory permissions ..."
 # Fix source directory permissions
