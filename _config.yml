@@ -15,7 +15,6 @@ future: true
 encoding: 'utf-8'
 
 incremental: false
-watch: false
 
 incremental_regeneration_fixer:
   interdependent_files:
