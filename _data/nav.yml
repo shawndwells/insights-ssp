@@ -30,6 +30,8 @@ Product Documents:
   - text: --
   - text: OpenShift v3
     href: /product-documents/ocp3/
+  - text: Ansible Tower
+    href: /product-documents/ansible-tower/
 
 ATO Documents:
   - text: Overview
