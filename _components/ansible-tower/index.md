@@ -2,7 +2,8 @@
 permalink: /product-documents/ansible-tower/
 redirect_from:
 - /ansible-tower/
-- /product-documents/ansible-tower/
+- /red-hat-enterprise-linux-7/
+- /product-documents/red-hat-enterprise-linux-7/
 layout: styleguide
 title: Ansible Tower
 category: Product Documents
@@ -18,6 +19,8 @@ subnav:
   href: '#section-508'
 - text: Configuration Guides
   href: '#configuration-guides'
+- text: ICS 500-27 Audit Data Standard
+  href: '#ics-500-27-audit-data-standard'
 ---
 
 {% include child-sections.html parent='ansible-tower' %}
