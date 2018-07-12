@@ -41,8 +41,7 @@ graphic_list:
         text: See what’s new
         url: coming-soon
 ---
-<!--
+
 <div class="usa-grid-full">
-future text here
+<h3 align="center">SITE UNDER DEVELOPMENT - CONSIDER ALL CONTENT TO BE 'ALPHA' QUALITY!</h3>
 </div>
--->
