@@ -4,11 +4,7 @@ layout: styleguide
 title: Ansible Tower - Access Control
 category: Product Documents
 lead: |
-  Users of the U.S. Web Design System have created implementations for
-  popular content management systems, web frameworks, and package managers that
-  may help get you started more quickly and easily. Though some implementations
-  may not include all of the Design System, they should give your team a strong
-  foundation to work from.
+  Some desc of Access Control will go here
 subnav:
   data: opencontrol-tower-access_control
   href: ['#%', control_key]
@@ -43,32 +39,84 @@ subnav:
   </div>
 </div>
 
-<table>
+<br /><br />
+
+<!-- BEGIN CONTROL RESPONSE TABLE -->
+<center>
+{% for control_response in site.data.opencontrol-tower-access_control %}
+
+NIST CONTROL INFORMATION:
+
+control:
+{% for control in site.data.nist-800-53-latest.{{ control_response.control_key }} %}
+{{ control.name }}
+{% endfor %}
+
+
+<table width="85%">
   <thead>
-    <tr>
-      <th>Control Key</th>
-      <th>Implementation Status</th>
-      <th>Narrative/Response</th>
-      <th>Notes</th>
+    <tr id="{{ control_response.control_key }}">
+      <th scope="row">
+        <strong>
+          <center>
+            {{ control_response.control_key }} Control Response Information
+          </center>
+        </strong>
+      </th>
     </tr>
   </thead>
-{% for control_response in site.data.opencontrol-tower-access_control %}
-  <tr id="{{ control_response.control_key }}">
-    <th scope="row">
-      <strong><center><a href="#{{ control_response.control_key }}"></a>{{ control_response.control_key }}</center></strong>
-    </th>
-    <td><center>{{ control_response.implementation_status }}</center></td>
+  <tr>
+    <td>Responsible Role: << NEEDS VAR >></td>
+  </tr>
+  <tr>
+    <td>Parameter array needs to print here:  Parameter value needs to print here</td>
+  </tr>
+  <tr>
+    <td>Parameter array needs to print here:  Parameter value needs to print here</td>
+  </tr>
+  <tr>
+    <td>Implementation Status: {{ control_response.implementation_status }}</td>
+  </tr>
+  <tr>
+    <td>Control Origination (check all that apply):
+      <ul>
+        <li>Service Provider Corporate</li>
+        <li>Service Provider System Specific</li>
+        <li>Service Provider Hybrid (Corporate and System Specific)</li>
+        <li>Configured By Customer (Customer System Specific)</li>
+        <li>Provided By Customer (Customer System Specific)</li>
+        <li>Shared (Service Provider and Customer Responsibility)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table width="85%">
+  <thead>
+    <tr>
+      <th>{{ control_response.control_key }}: What is the solution and how is it implemented?</th>
+    </tr>
+  </thead>
+  <tr>
     <td>
+      <!--
       {% if control_response.narrative %}
       {{ control_response.narrative | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
       {% else %}
       working on sub-elements!
       {% endif %}
+      -->
+      {{ control_response.narrative }}
     </td>
-    <td>{{ control_response.notes | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</td>
   </tr>
-{% endfor %}
 </table>
+
+<div class="usa-grid">
+  <hr class="homepage-rule center-diamond" />
+</div>
+{% endfor %}
+</center>
+<!-- END CONTROL RESPONSE LOOP -->
 
 [open an issue]: https://github.com/uswds/uswds-site/issues/new
 [send us an email]: mailto:uswds@gsa.gov
