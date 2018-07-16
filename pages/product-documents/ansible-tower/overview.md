@@ -1,5 +1,5 @@
 ---
-permalink: /product-documents/ansible-tower/overview/
+permalink: /product-documents/ansible-tower/overview2/
 redirect_from:
 - /ansible-tower/overview/
 layout: styleguide
