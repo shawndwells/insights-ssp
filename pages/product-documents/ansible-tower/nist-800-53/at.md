@@ -24,7 +24,7 @@ subnav:
         <th>Status</th>
       </tr>
     </thead>
-    {% for control_response in site.data.components.ansible-tower.policies.AT-Awareness_and_Training.component.component %}
+    {% for control_response in site.data.components.ansible-tower.policies.AT-Awareness_and_Training.component %}
     <tr>
       <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
       <td>TBD: parse {{ control_response.control_key }} description from NIST 800-53 dataset</td>
