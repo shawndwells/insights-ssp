@@ -101,7 +101,7 @@ gulp.task('build',
       'fonts',
       'images',
       'javascript',
-      'sass',
+      'sass'
     )
   )
 );
