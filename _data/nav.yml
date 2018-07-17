@@ -23,15 +23,17 @@ mobile:
 Product Documents:
   - text: Overview
     href: /product-documents/
-  - text: RHEL6
-    href: /product-documents/rhel6/
-  - text: RHEL7
-    href: /product-documents/rhel7/
-  - text: --
-  - text: OpenShift v3
-    href: /product-documents/ocp3/
+#  - text: RHEL6
+#    href: /product-documents/rhel6/
+#  - text: RHEL7
+#    href: /product-documents/rhel7/
+#  - text: --
+#  - text: OpenShift v3
+#    href: /product-documents/ocp3/
   - text: Ansible Tower
     href: /product-documents/ansible-tower/
+  - text: OpenShift Container Platform 3.x
+    href: /product-documents/openshift-container-platform-3/  
 
 ATO Documents:
   - text: Overview
