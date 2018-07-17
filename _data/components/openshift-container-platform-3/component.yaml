@@ -18,14 +18,14 @@ satisfies:
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: ''
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: ''
 
@@ -380,7 +380,7 @@ satisfies:
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -461,7 +461,7 @@ satisfies:
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative: 
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -483,7 +483,7 @@ satisfies:
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -492,7 +492,7 @@ satisfies:
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -501,7 +501,7 @@ satisfies:
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -523,7 +523,7 @@ satisfies:
 - control_key: AT-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -533,7 +533,7 @@ satisfies:
 - control_key: AT-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -543,7 +543,7 @@ satisfies:
 - control_key: AT-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -563,7 +563,7 @@ satisfies:
 - control_key: AT-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -578,7 +578,7 @@ satisfies:
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -588,7 +588,7 @@ satisfies:
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -611,7 +611,7 @@ satisfies:
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -668,7 +668,7 @@ satisfies:
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -910,7 +910,7 @@ satisfies:
 - control_key: CA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -919,7 +919,7 @@ satisfies:
 - control_key: CA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -928,7 +928,7 @@ satisfies:
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -937,7 +937,7 @@ satisfies:
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -946,7 +946,7 @@ satisfies:
 - control_key: CA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -955,7 +955,7 @@ satisfies:
 - control_key: CA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -965,7 +965,7 @@ satisfies:
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -975,7 +975,7 @@ satisfies:
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -999,7 +999,7 @@ satisfies:
 - control_key: CM-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1008,7 +1008,7 @@ satisfies:
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1109,7 +1109,7 @@ satisfies:
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1169,7 +1169,7 @@ satisfies:
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1272,7 +1272,7 @@ satisfies:
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1319,7 +1319,7 @@ satisfies:
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1332,7 +1332,7 @@ satisfies:
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1344,7 +1344,7 @@ satisfies:
 - control_key: CP-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1353,7 +1353,7 @@ satisfies:
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1362,7 +1362,7 @@ satisfies:
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1371,7 +1371,7 @@ satisfies:
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1487,7 +1487,7 @@ satisfies:
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1637,7 +1637,7 @@ satisfies:
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -1663,7 +1663,7 @@ satisfies:
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -1675,7 +1675,7 @@ satisfies:
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -1783,7 +1783,7 @@ satisfies:
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -1903,7 +1903,7 @@ satisfies:
 - control_key: IR-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1912,7 +1912,7 @@ satisfies:
 - control_key: IR-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1921,7 +1921,7 @@ satisfies:
 - control_key: IR-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1930,7 +1930,7 @@ satisfies:
 - control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1939,7 +1939,7 @@ satisfies:
 - control_key: IR-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1948,7 +1948,7 @@ satisfies:
 - control_key: IR-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1957,7 +1957,7 @@ satisfies:
 - control_key: IR-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1969,7 +1969,7 @@ satisfies:
 - control_key: MA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1978,7 +1978,7 @@ satisfies:
 - control_key: MA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2027,7 +2027,7 @@ satisfies:
 - control_key: MA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2050,7 +2050,7 @@ satisfies:
 - control_key: MP-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2059,7 +2059,7 @@ satisfies:
 - control_key: MP-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2068,7 +2068,7 @@ satisfies:
 - control_key: MP-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2077,7 +2077,7 @@ satisfies:
 - control_key: MP-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2284,7 +2284,7 @@ satisfies:
 - control_key: PL-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2293,7 +2293,7 @@ satisfies:
 - control_key: PL-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2302,7 +2302,7 @@ satisfies:
 - control_key: PL-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2315,7 +2315,7 @@ satisfies:
 - control_key: PS-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2325,7 +2325,7 @@ satisfies:
 - control_key: PS-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2335,7 +2335,7 @@ satisfies:
 - control_key: PS-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2344,7 +2344,7 @@ satisfies:
 - control_key: PS-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2353,7 +2353,7 @@ satisfies:
 - control_key: PS-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2362,7 +2362,7 @@ satisfies:
 - control_key: PS-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2371,7 +2371,7 @@ satisfies:
 - control_key: PS-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2381,7 +2381,7 @@ satisfies:
 - control_key: PS-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2393,7 +2393,7 @@ satisfies:
 - control_key: RA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2402,7 +2402,7 @@ satisfies:
 - control_key: RA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2411,7 +2411,7 @@ satisfies:
 - control_key: RA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2420,7 +2420,7 @@ satisfies:
 - control_key: RA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2433,7 +2433,7 @@ satisfies:
 - control_key: SA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2442,7 +2442,7 @@ satisfies:
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2451,7 +2451,7 @@ satisfies:
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2460,7 +2460,7 @@ satisfies:
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2469,7 +2469,7 @@ satisfies:
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2478,7 +2478,7 @@ satisfies:
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2653,7 +2653,7 @@ satisfies:
 - control_key: SC-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2687,7 +2687,7 @@ satisfies:
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -2895,7 +2895,7 @@ satisfies:
 - control_key: SC-15
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -3093,7 +3093,7 @@ satisfies:
 - control_key: SI-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     text: |
       'This control reflects organizational procedures/policies, and is not
@@ -3254,7 +3254,7 @@ satisfies:
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -3360,7 +3360,7 @@ satisfies:
 - control_key: SI-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -3515,7 +3515,7 @@ satisfies:
 - control_key: SI-16
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Red Hat OpenShift Container Platform inherits memory protections
