@@ -11,14 +11,49 @@ subnav:
   text: control_key
 ---
 
-<div class="usa-alert usa-alert-warning">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Heads up</h3>
-    <p class="usa-alert-text">All control responses are still in draft state and have not been reviewed by NIST, NSA, or DoD.</p>
-  </div>
-</div>
-
 <br /><br />
+
+<!-- BEGIN CONTROL SUMMARY TABLE -->
+<h2>Requirements Tracability Matrix</h2>
+<center>
+  <table width="85%">
+    <thead>
+      <tr>
+        <th>Control</th>
+        <th>Name</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    {% for control_response in site.data.components.openshift-container-platform-3.policies.AC-Access_Control.component %}
+    <tr>
+      <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
+      <td>TBD: parse {{ control_response.control_key }} description from NIST 800-53 dataset</td>
+      <td>
+        <center>
+          {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
+          <div class="usa-alert usa-alert-success" >
+          {% elsif control_response.implementation_status == 'partial' %}
+          <div class="usa-alert usa-alert-warning" >
+          {% elsif control_response.implementation_status == 'planned' %}
+          <div class="usa-alert usa-alert-info" > 
+          {% else %} 
+          <div class="usa-alert usa-alert-error" role="alert" > 
+          {% endif %} 
+            <div class="usa-alert-body">
+               <p class="usa-alert-text">{{ control_response.implementation_status }}</p>
+            </div>
+          </div>
+        </center>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</center>
+<!-- END CONTROL SUMMARY TABLE -->
+
+<div class="usa-grid">
+  <hr class="homepage-rule center-diamond" />
+</div>
 
 <!-- BEGIN CONTROL RESPONSE TABLE -->
 <center>
