@@ -6,11 +6,11 @@ category: Product Documents
 lead: |
   Control responses for NIST 800-53 rev4.
 subnav:
-  data: components.openshift-container-platform-3.policies.SI-Systems_and_Information_Integrity.component
+  data: components.openshift-container-platform-3.policies.SI-System_and_Information_Integrity.component
   href: ['#%', control_key]
   text: control_key
 product_info:
   name: OpenShift Container Platform 3.x
   opencontrol_component: openshift-container-platform-3
-  control_family: SI-Systems_and_Information_Integrity
+  control_family: SI-System_and_Information_Integrity
 ---
