@@ -6,11 +6,11 @@ category: Product Documents
 lead: |
   Control responses for NIST 800-53 rev4.
 subnav:
-  data: components.template-product.policies.SI-Systems_and_Information_Integrity.component
+  data: components.template-product.policies.SI-System_and_Information_Integrity.component
   href: ['#%', control_key]
   text: control_key
 product_info:
   name: Template Product
   opencontrol_component: template-product
-  control_family: SI-Systems_and_Information_Integrity
+  control_family: SI-System_and_Information_Integrity
 ---
