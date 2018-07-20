@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+{% capture opencontrol_component %}{{ page.product_info.opencontrol_component }}{% endcapture %}
+{% capture control_family %}{{ page.product_info.control_family }}{% endcapture %}
+{% capture control_family_shorthand %}{{ page.product_info.control_family_shorthand }}{% endcapture %}
+{% capture name %}{{ page.product_info.name }}{% endcapture %}
+
+
+
+
+<!-- Create an array of 'opencontrol_component' responses against the 'control_family'
+  Returns data array such as:
+
+  control_responses[0]: {"control_key"=>"AC-1", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
+  
+  control_responses[1]: {"control_key"=>"AC-2", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
+--> 
+{% assign control_responses = site.data.components.[opencontrol_component].policies.[control_family].component %}
+
+
+<!-- Create an array of controls known NOT to have a control response. 
+  This is done by merging nist_controls with control_responses and de-duplicating
+  NIST 800-53 keys -->
+
+
+<aside class="sidenav sticky">
+  {% assign sidenav = site.data.nav[page.category] %}
+  {% if sidenav %}
+  <ul class="usa-sidenav-list">
+    {% include nav/list.html links=sidenav %}
+  </ul>
+  {% endif %}
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+    </header>
+
+    {% include lead.html text=page.lead %}
+
+    <br /><br />
+
+    <!-- Create an array of NIST controls matching the 'control_family_shorthand'
+
+      This will create an array as follows:
+
+      nist_controls[0] = ["AC-2 (1)", {"family"=>"AC", "name"=>"Automated System Account Management", "description"=>"\"The organization employs automated mechanisms to support the management of information system accounts.\""}]
+      
+      nist_controls[1] = ["AC-2 (2)", {"family"=>"AC", "name"=>"Removal Of Temporary / Emergency Accounts", "description"=>"\"The information system automatically [Selection: removes; disables] temporary and emergency accounts after [Assignment: organization-defined time period for each type of account].\""}]
+    -->
+    {% assign nist_controls = "" %}
+    {% for control in site.data.standards.nist-800-53-latest %}
+      {% if control[1].family == control_family_shorthand %}
+        {% assign nist_controls = nist_controls | append: control %}
+      {% endif %}
+    {% endfor %}
+
+controls that match family:<br />
+{% for control in site.data.standards.nist-800-53-latest %}
+  {% if control[1].family == control_family_shorthand %}
+    {% assign x = x | append: '|' | append: control[0] %}
+  {% endif %}
+{% endfor %}
+  - {{ x }} <br />
+
+controls from responses:<br />
+{% for control_responses in site.data.components.[opencontrol_component].policies.[control_family].component %}
+- {{ control_responses.control_key }}<br />
+{% assign x = x | append: '|' | append: control_responses.control_key %}
+{% endfor %}
+
+
+controls with no responses:<br />
+  - {{ x }} <br />
+<hr />
+updated dates:
+
+{% assign array = 'c|c|b|b|a|a' | split: '|' %}
+{% assign tags = x[1] %}
+x[1] = {{ x[1] }}
+<br /> <br /> --- <br /><br />
+{% for item in x %}
+    {% unless tags contains item %}
+        {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
+    {% endunless %}
+{% endfor %}
+
+{{ tags | split: '|' | sort | join: ', ' }}
+
+  </div> <!-- end styleguide-content. This should be 2nd to last tag on template -->
+}
+</main> <!-- end main-content. This should be the last tag on template page -->
