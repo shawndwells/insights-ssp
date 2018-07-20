@@ -2,22 +2,12 @@ primary:
   - href: /getting-started/
   - href: /ato-documents/
   - href: /product-documents/
-#  - href: /nowhere
-#  - href: /nowhere
-#  - href: /components/
-#  - href: /page-templates/
-#  - href: /design-principles/
-#  - href: /whats-new/
-#  - href: /design-principles/
 
 mobile:
-  - href: /components/
-    collapsible: true
-  - href: /page-templates/
   - href: /getting-started/
     collapsible: true
-  - href: /design-principles/
-  - href: /whats-new/
+  - href: /ato-documents/
+  - href: /product-documents/
     collapsible: true
 
 Product Documents:
@@ -27,9 +17,6 @@ Product Documents:
 #    href: /product-documents/rhel6/
 #  - text: RHEL7
 #    href: /product-documents/rhel7/
-#  - text: --
-#  - text: OpenShift v3
-#    href: /product-documents/ocp3/
   - text: Ansible Tower
     href: /product-documents/ansible-tower/
   - text: OpenShift Container Platform 3.x
