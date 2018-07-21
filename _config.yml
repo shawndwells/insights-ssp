@@ -1,7 +1,7 @@
 # Site settings
 title:  Red Hat's ATO Pathways
 description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
-google_analytics_ua: UA-48605964-43
+google_analytics_ua: UA-122701391-1
 components_url: 'https://components.designsystem.digital.gov'
 host: "0.0.0.0"
 port: 8080
