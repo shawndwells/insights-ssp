@@ -4,6 +4,7 @@ layout: default
 
 {% capture opencontrol_component %}{{ page.product_info.opencontrol_component }}{% endcapture %}
 {% capture control_family %}{{ page.product_info.control_family }}{% endcapture %}
+{% capture control_family_shorthand %}{{ page.product_info.control_family }}{% endcapture %}
 {% capture name %}{{ page.product_info.name }}{% endcapture %}
 
 <aside class="sidenav sticky">
@@ -26,6 +27,7 @@ layout: default
 
     <br /><br />
 
+    <!-- BEGIN CONTROL SUMMARY TABLE -->
     <h2><center>Requirements Traceability Matrix</center></h2>
     <center>
       <table width="85%">
@@ -66,7 +68,7 @@ layout: default
     <!-- BEGIN CONTROL RESPONSE TABLE -->
     {% for control_response in site.data.components.[opencontrol_component].policies.[control_family].component %}
       <div class="usa-grid" id="{{ control_response.control_key }}">
-        <hr class="homepage-rule center-diamond" />
+        <br /><hr class="homepage-rule center-diamond" /><br />
       </div>
 
       <div class="alignment-example" align="center">

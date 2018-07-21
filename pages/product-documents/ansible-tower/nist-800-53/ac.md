@@ -13,4 +13,5 @@ product_info:
   name: Ansible Tower
   opencontrol_component: ansible-tower
   control_family: AC-Access_Control
+  control_family_shorthand: AC
 ---
