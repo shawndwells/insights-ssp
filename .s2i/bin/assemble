@@ -26,3 +26,6 @@ set +e
 [[ -d ./tmp ]] && chgrp -R 0 ./tmp && chmod -R g+rw ./tmp
 [[ -d ./db ]] && chgrp -R 0 ./db && chmod -R g+rw ./db
 set -e
+
+# Remove src git repo for uswds website
+rm -rf /tmp/src/.git
