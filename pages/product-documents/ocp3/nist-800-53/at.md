@@ -13,3 +13,4 @@ product_info:
   name: OpenShift Container Platform 3.x
   opencontrol_component: ocp3
   control_family_shorthand: AT
+---
