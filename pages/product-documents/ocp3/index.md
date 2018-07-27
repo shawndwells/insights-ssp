@@ -1,46 +1,46 @@
 ---
-permalink: /product-documents/openshift-container-platform-3/
+permalink: /product-documents/ocp3/
 redirect_from:
-- /openshift-container-platform-3/
+- /ocp3/
 layout: styleguide
 title: OpenShift Container Platform 3.x
 category: Product Documents
 lead: "Work in Progress!"
 subnav:
   - text: Overview
-    href: /product-documents/openshift-container-platform-3/overview/
+    href: /product-documents/ocp3/overview/
   - text: AC - Access Control
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ac/
+    href: /product-documents/ocp3/nist-800-53/ac/
   - text: AT - Awareness and Training
-    href: /product-documents/openshift-container-platform-3/nist-800-53/at/
+    href: /product-documents/ocp3/nist-800-53/at/
   - text: AU - Audit and Accountability
-    href: /product-documents/openshift-container-platform-3/nist-800-53/au/
+    href: /product-documents/ocp3/nist-800-53/au/
   - text: CA - Security Assessment & Authorization
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ca/
+    href: /product-documents/ocp3/nist-800-53/ca/
   - text: CM - Configuration Management
-    href: /product-documents/openshift-container-platform-3/nist-800-53/cm/
+    href: /product-documents/ocp3/nist-800-53/cm/
   - text: CP - Contingency Planning
-    href: /product-documents/openshift-container-platform-3/nist-800-53/cp/
+    href: /product-documents/ocp3/nist-800-53/cp/
   - text: IA - Identification and Authentication
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ia/
+    href: /product-documents/ocp3/nist-800-53/ia/
   - text: IR - Incident Response
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ir/
+    href: /product-documents/ocp3/nist-800-53/ir/
   - text: MA - Maintenance
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ma/
+    href: /product-documents/ocp3/nist-800-53/ma/
   - text: MP - Media Protection
-    href: /product-documents/openshift-container-platform-3/nist-800-53/mp/
+    href: /product-documents/ocp3/nist-800-53/mp/
   - text: PE - Physical & Environmental Protection
-    href: /product-documents/openshift-container-platform-3/nist-800-53/pe/
+    href: /product-documents/ocp3/nist-800-53/pe/
   - text: PL - Planning
-    href: /product-documents/openshift-container-platform-3/nist-800-53/pl/
+    href: /product-documents/ocp3/nist-800-53/pl/
   - text: PS - Personnel Security
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ps/
+    href: /product-documents/ocp3/nist-800-53/ps/
   - text: RA - Risk Assessment
-    href: /product-documents/openshift-container-platform-3/nist-800-53/ra/
+    href: /product-documents/ocp3/nist-800-53/ra/
   - text: SA - System and Services Acquisition
-    href: /product-documents/openshift-container-platform-3/nist-800-53/sa/
+    href: /product-documents/ocp3/nist-800-53/sa/
   - text: SC - Systems and Communications Protection
-    href: /product-documents/openshift-container-platform-3/nist-800-53/sc/
+    href: /product-documents/ocp3/nist-800-53/sc/
   - text: SI - System and Information Integrity
-    href: /product-documents/openshift-container-platform-3/nist-800-53/si/
+    href: /product-documents/ocp3/nist-800-53/si/
 ---

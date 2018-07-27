@@ -7,10 +7,10 @@ metadata:
     - Gabe Alford <galford@redhat.com>
 
 components:
-    - ./../../ComplianceAsCode/redhat/openstack-platform-13
-    - ./../../ComplianceAsCode/redhat/openshift-container-platform-3
-    - ./../../ComplianceAsCode/redhat/identity-management
-    - ./../../ComplianceAsCode/redhat/ansible-tower
+#    - ./../../ComplianceAsCode/redhat/openstack-platform-13
+#    - ./../../ComplianceAsCode/redhat/openshift-container-platform-3
+#    - ./../../ComplianceAsCode/redhat/identity-management
+#    - ./../../ComplianceAsCode/redhat/ansible-tower
 
 dependencies:
   standards:
@@ -22,15 +22,15 @@ dependencies:
     - url: https://github.com/opencontrol/certifications
       revision: master
   systems:
-#    - url: https://github.com/ComplianceAsCode/redhat
-#      contextdir: osp13
-#      revision: opencontrol
-#    - url: https://github.com/ComplianceAsCode/redhat
-#      contextdir: ocp3
-#      revision: opencontrol
-#    - url: https://github.com/ComplianceAsCode/redhat
-#      contextdir: idm
-#      revision: opencontrol
-#    - url: https://github.com/ComplianceAsCode/redhat
-#      contextdir: ansible-tower
-#      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: osp13
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ocp3
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: idm
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ansible-tower
+      revision: opencontrol
