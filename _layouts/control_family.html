@@ -3,11 +3,8 @@ layout: default
 ---
 
 {% capture opencontrol_component %}{{ page.product_info.opencontrol_component }}{% endcapture %}
-{% capture control_family %}{{ page.product_info.control_family }}{% endcapture %}
 {% capture control_family_shorthand %}{{ page.product_info.control_family_shorthand }}{% endcapture %}
 {% capture name %}{{ page.product_info.name }}{% endcapture %}
-
-
 
 
 <!-- Create an array of 'opencontrol_component' responses against the 'control_family'
@@ -17,7 +14,7 @@ layout: default
   
   control_responses[1]: {"control_key"=>"AC-2", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
 --> 
-{% assign control_responses = site.data.components.[opencontrol_component].policies.[control_family].component %}
+{% assign control_responses = site.data.components.[opencontrol_component] %}
 
 
 <!-- Create an array of controls known NOT to have a control response. 
@@ -45,53 +42,169 @@ layout: default
 
     <br /><br />
 
-    <!-- Create an array of NIST controls matching the 'control_family_shorthand'
+<!-- BEGIN CONTROL SUMMARY TABLE -->
+<h2>
+  <center>Requirements Traceability Matrix</center>
+</h2>
+    <center>
+      <table width="85%">
+        <thead>
+          <tr>
+            <th>Control</th> 
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        {% for control_response in control_responses.satisfies %}
+          {% if control_response.control_key contains control_family_shorthand %}
+            <tr>
+              <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
+              <td>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</td>
+              <td>
+                <center>
+                  {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
+                  <div class="usa-alert usa-alert-success" >
+                  {% elsif control_response.implementation_status == 'partial' %}
+                  <div class="usa-alert usa-alert-warning" >
+                  {% elsif control_response.implementation_status == 'planned' %}
+                  <div class="usa-alert usa-alert-info" > 
+                  {% else %} 
+                  <div class="usa-alert usa-alert-error" role="alert" > 
+                  {% endif %} 
+                    <div class="usa-alert-body">
+                       <p class="usa-alert-text">{{ control_response.implementation_status }}</p>
+                    </div>
+                  </div>
+                </center>
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </center>
+<!-- BEGIN CONTROL SUMMARY TABLE -->
 
-      This will create an array as follows:
+<!-- BEGIN CONTROL RESPONSE TABLE -->
+    {% for control_response in site.data.components.[opencontrol_component].satisfies %}
+      {% if control_response.control_key contains control_family_shorthand %}
+      <div class="usa-grid" id="{{ control_response.control_key }}">
+        <br /><hr class="homepage-rule center-diamond" /><br />
+      </div>
 
-      nist_controls[0] = ["AC-2 (1)", {"family"=>"AC", "name"=>"Automated System Account Management", "description"=>"\"The organization employs automated mechanisms to support the management of information system accounts.\""}]
+      <div class="alignment-example" align="center">
+        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</h2>
+        <h4>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].description | markdownify }}</h4>
+      </div>
+
+    <center>
+    <table width="85%">
+      <thead>
+        <tr>
+          <th scope="row">
+            <strong>
+              <center>
+                {{ control_response.control_key }} Control Response Information
+              </center>
+            </strong>
+          </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>
+          <b>Implementation Status: </b> 
+          {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
+          <div class="usa-alert usa-alert-success" >
+          {% elsif control_response.implementation_status == 'partial' %}
+          <div class="usa-alert usa-alert-warning" >
+          {% elsif control_response.implementation_status == 'planned' %}
+          <div class="usa-alert usa-alert-info" > 
+          {% else %} 
+          <div class="usa-alert usa-alert-error" role="alert" > 
+          {% endif %} 
+            <div class="usa-alert-body">
+              <p class="usa-alert-text">{{ control_response.implementation_status }}</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!--<tr>
+        <td>Control Origination:
+          <ul>
+            <li>Provided By Customer (Customer System Specific)</li>
+            <li>Shared (Service Provider and Customer Responsibility)</li>
+          </ul>
+          There should be a checklist here:
+          <fieldset>
       
-      nist_controls[1] = ["AC-2 (2)", {"family"=>"AC", "name"=>"Removal Of Temporary / Emergency Accounts", "description"=>"\"The information system automatically [Selection: removes; disables] temporary and emergency accounts after [Assignment: organization-defined time period for each type of account].\""}]
-    -->
-    {% assign nist_controls = "" %}
-    {% for control in site.data.standards.nist-800-53-latest %}
-      {% if control[1].family == control_family_shorthand %}
-        {% assign nist_controls = nist_controls | append: control %}
-      {% endif %}
+        <div>
+            <input type="checkbox" id="Service_Provider_Corporate" name="origination"
+                   value="Service_Provider_Corporate" checked />
+            <label for="Service_Provider_Corporate">Service Provider Corporate</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_System_Specific" name="origination"
+                   value="Service_Provider_System_Specific" />
+            <label for="Service_Provider_System_Specific">Service Provider System Specific</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Configured_By_Customer" name="origination"
+                   value="Configured_By_Customer" />
+            <label for="Configured_By_Customer">Configured By Customer (Customer System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+    </fieldset>
+        </td>
+      </tr> -->
+    </table>
+
+    <table width="85%">
+      <thead>
+        <tr>
+          <th>{{ control_response.control_key }}: What is the solution and how is it implemented?</th>
+        </tr>
+      </thead>
+      {% for key in control_response.narrative %}
+      <tr>
+        <td>
+          {% if key.key != null %}
+          <b>{{ control_response.control_key }}({{ key.key }}):</b>
+          {% endif %}
+          {{ key.text | markdownify  | replace: '\n', '<br />' | replace: "'", '<p>' | replace: "'", '</p>' }}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </center>
+    {% endif %}
     {% endfor %}
 
-controls that match family:<br />
-{% for control in site.data.standards.nist-800-53-latest %}
-  {% if control[1].family == control_family_shorthand %}
-    {% assign x = x | append: '|' | append: control[0] %}
-  {% endif %}
-{% endfor %}
-  - {{ x }} <br />
-
-controls from responses:<br />
-{% for control_responses in site.data.components.[opencontrol_component].policies.[control_family].component %}
-- {{ control_responses.control_key }}<br />
-{% assign x = x | append: '|' | append: control_responses.control_key %}
-{% endfor %}
-
-
-controls with no responses:<br />
-  - {{ x }} <br />
-<hr />
-updated dates:
-
-{% assign array = 'c|c|b|b|a|a' | split: '|' %}
-{% assign tags = x[1] %}
-x[1] = {{ x[1] }}
-<br /> <br /> --- <br /><br />
-{% for item in x %}
-    {% unless tags contains item %}
-        {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
-    {% endunless %}
-{% endfor %}
-
-{{ tags | split: '|' | sort | join: ', ' }}
+    <!-- END CONTROL RESPONSE LOOP -->
 
   </div> <!-- end styleguide-content. This should be 2nd to last tag on template -->
-}
 </main> <!-- end main-content. This should be the last tag on template page -->

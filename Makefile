@@ -1,5 +1,4 @@
-pre-release: opencontrol
-
+default: opencontrol fedramp-templates
 
 opencontrol:
 	masonry get -d _data/

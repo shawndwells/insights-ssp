@@ -20,9 +20,9 @@ Product Documents:
   - text: Ansible Tower
     href: /product-documents/ansible-tower/
   - text: OpenShift Container Platform 3.x
-    href: /product-documents/openshift-container-platform-3/
+    href: /product-documents/ocp3/
   - text: OpenStack Platform 13
-    href: /product-documents/openstack-platform-13/
+    href: /product-documents/osp13/
 
 ATO Documents:
   - text: Overview
