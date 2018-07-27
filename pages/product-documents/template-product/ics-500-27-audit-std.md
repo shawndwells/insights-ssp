@@ -62,5 +62,4 @@ order: 05
 ### Identifier indicating the source/system of the event activity
 ### Identifier indicating the identity of the subject or actor (e.g. UserId, ProcessId, etc.)
 ### Details identifying any objects or resources accessed or involved (aka Resource List), e.g., files (including location), document id, peripherals, storage devices, etc.
-### Outocme
-
+### Outcome
