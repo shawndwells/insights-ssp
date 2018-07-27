@@ -13,3 +13,4 @@ product_info:
   name: Template Product
   opencontrol_component: template-product
   control_family_shorthand: AT
+---
