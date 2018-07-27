@@ -8,7 +8,7 @@ lead: Product-specific security documentation.
 
 The FedRAMP templates below are dynamically generated using the [OpenControl FedRAMP Templater](https://github.com/opencontrol/fedramp-templater) tool, originally created by [GSA's 18F](https://18f.gsa.gov/). An automated build system incorporates [Red Hat's OpenControl Content](https://github.com/ComplianceAsCode/redhat) directly into the FedRAMP Templates [provided by the GSA FedRAMP PMO](https://www.fedramp.gov/templates/).
 
-Templates were last updated {{ "now" | date: "%Y-%m-%d at %H:%M" EST }}.
+Templates were last updated {{ "now" | date: "%Y-%m-%d at %H:%M" }} UTC.
 
 <center>
 	<table width="85%">
