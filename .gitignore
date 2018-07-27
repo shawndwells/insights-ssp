@@ -8,3 +8,6 @@ npm-debug.log
 .bundle/
 assets/
 .jekyll_get_cache/
+_data/certifications/
+_data/components/
+_data/standards/
