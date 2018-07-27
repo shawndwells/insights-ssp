@@ -28,4 +28,4 @@ set +e
 set -e
 
 # Remove src git repo for uswds website
-rm -rf /tmp/src/.git
+rm -rf ./.git
