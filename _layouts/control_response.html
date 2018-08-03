@@ -38,10 +38,10 @@ layout: default
             <th>Status</th>
           </tr>
         </thead>
-        {% for control_response in site.data.components.[opencontrol_component].policies.[control_family].component %}
+        {% for control_response in site.data.components[opencontrol_component].policies[control_family].component %}
         <tr>
           <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
-          <td>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</td>
+          <td>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</td>
           <td>
             <center>
               {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
@@ -66,14 +66,14 @@ layout: default
     <!-- END CONTROL SUMMARY TABLE -->
 
     <!-- BEGIN CONTROL RESPONSE TABLE -->
-    {% for control_response in site.data.components.[opencontrol_component].policies.[control_family].component %}
+    {% for control_response in site.data.components[opencontrol_component].policies[control_family].component %}
       <div class="usa-grid" id="{{ control_response.control_key }}">
         <br /><hr class="homepage-rule center-diamond" /><br />
       </div>
 
       <div class="alignment-example" align="center">
-        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</h2>
-        <h4>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].description | markdownify }}</h4>
+        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</h2>
+        <h4>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].description | markdownify }}</h4>
       </div>
 
     <center>
