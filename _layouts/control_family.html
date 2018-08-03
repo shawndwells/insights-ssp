@@ -14,7 +14,7 @@ layout: default
   
   control_responses[1]: {"control_key"=>"AC-2", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
 --> 
-{% assign control_responses = site.data.components.[opencontrol_component] %}
+{% assign control_responses = site.data.components[opencontrol_component] %}
 
 
 <!-- Create an array of controls known NOT to have a control response. 
@@ -59,7 +59,7 @@ layout: default
           {% if control_response.control_key contains control_family_shorthand %}
             <tr>
               <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
-              <td>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</td>
+              <td>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</td>
               <td>
                 <center>
                   {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
@@ -85,15 +85,15 @@ layout: default
 <!-- BEGIN CONTROL SUMMARY TABLE -->
 
 <!-- BEGIN CONTROL RESPONSE TABLE -->
-    {% for control_response in site.data.components.[opencontrol_component].satisfies %}
+    {% for control_response in site.data.components[opencontrol_component].satisfies %}
       {% if control_response.control_key contains control_family_shorthand %}
       <div class="usa-grid" id="{{ control_response.control_key }}">
         <br /><hr class="homepage-rule center-diamond" /><br />
       </div>
 
       <div class="alignment-example" align="center">
-        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4.[control_response.control_key].name }}</h2>
-        <h4>{{ site.data.standards.nist-800-53-rev4.[control_response.control_key].description | markdownify }}</h4>
+        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</h2>
+        <h4>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].description | markdownify }}</h4>
       </div>
 
     <center>
