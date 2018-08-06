@@ -1,5 +1,5 @@
 ---
-permalink: /product-documents/openshift-container-platform-3/overview/
+permalink: /product-documents/ocp3/overview/
 redirect_from:
 - /openshift-container-platform-3/overview/
 layout: styleguide

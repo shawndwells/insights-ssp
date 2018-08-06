@@ -1,5 +1,5 @@
 ---
-permalink: /product-documents/openstack-platform-13/overview/
+permalink: /product-documents/osp13/overview/
 redirect_from:
 - /openstack-platform-13/overview/
 layout: styleguide
