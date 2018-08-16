@@ -26,7 +26,85 @@ layout: default
   {% assign sidenav = site.data.nav[page.category] %}
   {% if sidenav %}
   <ul class="usa-sidenav-list">
-    {% include nav/list.html links=sidenav %}
+    {% for link in site.data.nav[page.category] %}
+      {% if link.href %}
+        {% assign _page = link.href | resolve_permalink %}
+      {% else %}
+        {% assign _page = nil %}
+      {% endif %}
+      <li>
+      {% if _page %}
+        {% include nav/current.html page=_page %}
+          <a href="{{ _page.url | relative_url }}"{%
+            if _current %} class="usa-current"{% endif %}>
+            {% unless sidenav %}<span>{% endunless %}
+            {{ include.text | default: _page.title | smartify }}
+            {% unless sidenav %}</span>{% endunless %}
+          </a>
+        {% if _current %}
+          {% unless include.flat %}
+            {% assign _href_key = include.href_key %}
+            {% assign _text_key = include.href_key %}
+            {% assign _sublinks = link.links | default: _page.subnav %}
+          {% if _sublinks.data %}
+            {% assign _href_key = _sublinks.href %}
+            {% assign _text_key = _sublinks.text %}
+            {% assign _data_key = _sublinks.data %}
+            {% assign _sublinks = site.data[_data_key] %}
+
+          {% elsif _sublinks.type %}
+            {% assign _sublinks = nil %}
+          {% endif %}
+          {% if _sublinks %}
+            <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">
+            {% for slink in _sublinks %}
+              {% if slink.href %}
+                {% assign _subpage = slink.href | resolve_permalink %}
+              {% else %}
+                {% assign _subpage = nil %}
+              {% endif %}
+              <li>
+                {% if _subpage %}
+                  {%
+                    include nav/page-item.html
+                    page=_subpage
+                    rel=include.rel
+                    flat=include.flat
+                    links=slink.sublinks
+                    subnav_class=include.subnav_class
+                    text=slink.text
+                  %}
+                  {% for control_response in control_responses.satisfies %}
+                    {% if slink.text contains control_family_shorthand %}
+                      {% if control_response.control_key contains control_family_shorthand %}
+                        <ul class="usa-sidenav-sub_list">
+			  <ul class="usa-sidenav-sub_list">
+                            <li>
+		              <a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a>
+			    </li>
+                          </ul>
+			</ul>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% include nav/link-item.html
+                    link=slink
+                    subnav_class=include.subnav_class
+                    href_key=include.href_key
+                    text_key=include.text_key
+                  %}
+                {% endif %}
+              </li>
+            {% endfor %}
+	  </ul>
+          {% endif %}
+          {% endunless %}
+        {% endif %}
+
+      {% endif %}
+      </li>
+    {% endfor %}
   </ul>
   {% endif %}
 </aside>
