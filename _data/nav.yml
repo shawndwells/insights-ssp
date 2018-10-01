@@ -23,6 +23,10 @@ Product Documents:
     href: /product-documents/ocp3/
   - text: OpenStack Platform 13
     href: /product-documents/osp13/
+  - text: Red Hat Virtualization Host
+    href: /product-documents/rhvh/
+  - text: Red Hat Virtualization Manager
+    href: /product-documents/rhvm/
 
 ATO Documents:
   - text: Overview
