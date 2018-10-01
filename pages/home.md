@@ -43,5 +43,5 @@ graphic_list:
 ---
 
 <div class="usa-grid-full">
-<h3 align="center">SITE UNDER DEVELOPMENT - CONSIDER ALL CONTENT TO BE 'ALPHA' QUALITY!</h3>
+<h3 align="center">SITE UNDER DEVELOPMENT - CONSIDER ALL CONTENT TO BE BETA QUALITY!</h3>
 </div>
