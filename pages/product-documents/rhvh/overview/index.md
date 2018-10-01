@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 title: Red Hat Virtualization Host (RHVH) Overview
 category: Product Documents
-lead: "Work in Progress!"
+lead: ""
 subnav:
 - text: '&mdash; Common Criteria'
   href: '#common-criteria'
@@ -47,13 +47,13 @@ are retained:
 | Red Hat Enterprise Linux 7.x | NSS | 5.0 | [#3070](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Certificate/3070) | <span class="usa-label-big">ACTIVE</span> | 2/7/2023 |
 
 #### Known Issues with FIPS 140-2 Enablement
-Coming Soon
+Coming Soon.
 
 ### USGv6 / IPv6
-Coming Soon
+Coming Soon.
 
 ### Section 508 / VPAT
-Coming Soon
+Coming Soon.
 
 ### Configuration Guides
-Coming Soon
+Coming Soon.

@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 title: OpenStack Platform 13 Overview
 category: Product Documents
-lead: "Work in Progress!"
+lead: ""
 subnav:
 - text: '&mdash; Common Criteria'
   href: '#common-criteria'
@@ -50,17 +50,13 @@ are retained:
 | Red Hat Enterprise Linux 7.x | NSS | 5.0 | [#3070](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Certificate/3070) | <span class="usa-label-big">ACTIVE</span> | 2/7/2023 |
 
 #### Known Issues with FIPS 140-2 Enablement
-Currently OpenStack Platform 13 is not supported on a FIPS-enabled operating system. The following RFEs
-track progress towards full FIPS support:
-
-- tbd
-- tbd
+Coming soon.
 
 ### USGv6 / IPv6
 OpenStack Platform 13 does not have any US Government IPv6 certifications.
 
 ### Section 508 / VPAT
-Direct link to OpenStack Platform 13's VPAT statement:
+Coming soon.
 
 ### Configuration Guides
 A NIST National Checklist for OpenStack Platform 13 is currently being developed. Contact your Red Hat
