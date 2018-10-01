@@ -17,8 +17,6 @@ subnav:
   href: '#section-508'
 - text: '&mdash; Configuration Guides'
   href: '#configuration-guides'
-- text: '&mdash; ICS 500-27 Audit Data Standard'
-  href: 'ics-500-27-audit-data-standard/'
 ---
 
 
@@ -49,19 +47,13 @@ are retained:
 | Red Hat Enterprise Linux 7.x | NSS | 5.0 | [#3070](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Certificate/3070) | <span class="usa-label-big">ACTIVE</span> | 2/7/2023 |
 
 #### Known Issues with FIPS 140-2 Enablement
-Currently Red Hat Virtualization Host is not supported on a FIPS-enabled operating system. The following RFEs
-track progress towards full FIPS support:
-
-- tbd
-- tbd
+Coming Soon
 
 ### USGv6 / IPv6
-Red Hat Virtualization Host does not have any US Government IPv6 certifications.
+Coming Soon
 
 ### Section 508 / VPAT
-Direct link to Red Hat Virtualization Host 3's VPAT statement:
-[https://access.redhat.com/sites/default/files/attachments/ansible_tower_section_508_vpat.pdf](https://access.redhat.com/sites/default/files/attachments/ansible_tower_section_508_vpat.pdf)
+Coming Soon
 
 ### Configuration Guides
-A NIST National Checklist for Red Hat Virtualization Host is currently being developed. Contact your Red Hat
-representative for pre-release access!
+Coming Soon

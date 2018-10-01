@@ -14,7 +14,7 @@ Templates were last updated {{ "now" | date: "%Y-%m-%d at %H:%M" }} UTC.
 	<table width="85%">
 		<thead>
 			<tr>
-				<th></th> 
+				<th><center>Product</center></th>
 				<th><center>Template</center></th>
 			</tr>
 		</thead>
@@ -46,6 +46,30 @@ Templates were last updated {{ "now" | date: "%Y-%m-%d at %H:%M" }} UTC.
 			  <center>
 			    <a href="{{ site.baseurl }}/files/fedramp/FedRAMP-System-Security-Plan-OpenStack-Platform-13.docx">
 			      <img src="{{ site.baseurl }}/img/word_logo.svg" alt="MS Word Template for OpenStack FedRAMP" style="width:35px;height:35px;"><br />
+			      WORD
+			    </a>
+			  </center>
+			</td>
+		</tr>
+		<tr>
+			<td>Red Hat Virtualization Host (RHVH)
+			<p><i>Currently the RHVH FedRAMP Template includes controls for FedRAMP Low. It has been released as Public Draft as of 30-SEPT-2018.</i></p></td>
+			<td>
+			  <center>
+			    <a href="{{ site.baseurl }}/files/fedramp/FedRAMP-System-Security-Plan-RedHat-Virtualization-Host.docx">
+			      <img src="{{ site.baseurl }}/img/word_logo.svg" alt="MS Word Template for Red Hat Virtualization Host FedRAMP" style="width:35px;height:35px;"><br />
+			      WORD
+			    </a>
+			  </center>
+			</td>
+		</tr>
+		<tr>
+			<td>Red Hat Virtualization Manager (RHVM)
+			<p><i>Currently the RHVM FedRAMP Template includes controls for FedRAMP Low. It has been released as Public Draft as of 30-SEPT-2018.</i></p></td>
+			<td>
+			  <center>
+			    <a href="{{ site.baseurl }}/files/fedramp/FedRAMP-System-Security-Plan-RedHat-Virtualization-Manager.docx">
+			      <img src="{{ site.baseurl }}/img/word_logo.svg" alt="MS Word Template for Red Hat Virtualization Manager FedRAMP" style="width:35px;height:35px;"><br />
 			      WORD
 			    </a>
 			  </center>
