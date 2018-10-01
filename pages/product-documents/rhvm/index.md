@@ -6,7 +6,7 @@ redirect_from:
 layout: styleguide
 title: Red Hat Virtualization Manager (RHVM)
 category: Product Documents
-lead: "Work in Progress!"
+lead: "About this Content"
 subnav:
   - text: Overview
     href: /product-documents/rhvm/overview/
@@ -45,3 +45,24 @@ subnav:
   - text: SI - System and Information Integrity
     href: /product-documents/rhvm/nist-800-53/si/
 ---
+
+This microsite was developed to assist Federal customers,
+and industries regulated by Federal standards, in finding
+authoritative information regarding how 
+Red Hat Virtualization Manager meets various
+policies and regulations.
+
+All resources contained within this site are generated from the
+<a href="https://github.com/ComplianceAsCode/">ComplianceAsCode Project</a>
+on GitHub.
+
+<ul>
+  <li>NIST 800-53/FISMA Applicability guide was generated from OpenControl
+data available at <a href="https://github.com/ComplianceAsCode/redhat">https://github.com/ComplianceAsCode/redhat</a>.</li>
+  <li>SCAP and Ansible playbooks are generated from the ComplianceAsCode
+    Content project: <a href="https://github.com/ComplianceAsCode/content">https://github.com/ComplianceAsCode/content</a>.</li>
+</ul>
+
+Find an issue in the content? Does something need updating?
+<a href="https://github.com/ComplianceAsCode/redhat/issues/new" class="usa-button">Open an Issue on GitHub</a>
+

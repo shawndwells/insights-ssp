@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 title: Ansible Tower Overview
 category: Product Documents
-lead: "Work in Progress!"
+lead: ""
 subnav:
 - text: '&mdash; Common Criteria'
   href: '#common-criteria'
@@ -21,14 +21,11 @@ subnav:
   href: 'ics-500-27-audit-data-standard/'
 ---
 
-Ansible tower overview
-
 ## Common Criteria
 Ansible Tower has not undergone Common Criteria certification. A future certification
 against the [NIAP Protection Profile for Application Software](https://www.niap-ccevs.org/Profile/Info.cfm?PPID=394&id=394) is being considered.
 
-To help Red Hat track demand for a Common Criteria certification of Ansible Tower, please open a
-customer support case requesting an evaluation.
+To help Red Hat track demand for a Common Criteria certification of Ansible Tower, please <a href="https://access.redhat.com/support/cases/#/case/new">open a customer support case</a> requesting a certification.
 
 ## FIPS 140-2
 Federal Information Processing Standard 140-2 is a legal requirement ensuring cryptographic tools implement algorithms properly. Vendors must certify their cryptographic implementations through NIST's [Cryptographic Module Validation Program](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program).
@@ -50,11 +47,8 @@ are retained:
 | Red Hat Enterprise Linux 7.x | NSS | 5.0 | [#3070](https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program/Certificate/3070) | <span class="usa-label-big">ACTIVE</span> | 2/7/2023 |
 
 #### Known Issues with FIPS 140-2 Enablement
-Currently Ansible Tower is not supported on a FIPS-enabled operating system. The following RFEs
-track progress towards full FIPS support:
-
-- tbd
-- tbd
+Currently Ansible Tower is not supported on a FIPS-enabled operating system. Contact
+your Red Hat representative for roadmap information.
 
 ### USGv6 / IPv6
 Ansible Tower does not have any US Government IPv6 certifications.
