@@ -18,7 +18,7 @@ subnav:
 - text: '&mdash; Configuration Guides'
   href: '#configuration-guides'
 - text: '&mdash; ICS 500-27 Audit Data Standard'
-  href: '#ics-500-27-audit-data-standard'
+  href: 'ics-500-27-audit-data-standard/'
 ---
 
 Ansible tower overview
