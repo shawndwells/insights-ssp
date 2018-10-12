@@ -54,11 +54,8 @@ your Red Hat representative for roadmap information.
 Ansible Tower does not have any US Government IPv6 certifications.
 
 ### Section 508 / VPAT
-Direct link to Ansible Tower 3's VPAT statement:
-[https://access.redhat.com/sites/default/files/attachments/ansible_tower_section_508_vpat.pdf](https://access.redhat.com/sites/default/files/attachments/ansible_tower_section_508_vpat.pdf)
-
-Link to Ansible Tower 3.x WCAG 2.0 statement:
-[http://atopathways.redhatgov.io/files/section508/ansible_tower_section_508_vpat_and_wcag_2.0.pdf](http://atopathways.redhatgov.io/files/section508/ansible_tower_section_508_vpat_and_wcag_2.0.pdf)
+Direct link to Ansible Tower 3.x Section 508 VPAT and WCAG documentation:
+[https://www.ansible.com/hubfs/government/Ansible_Tower_Section_508_VPAT.pdf?hsLang=en-us](https://www.ansible.com/hubfs/government/Ansible_Tower_Section_508_VPAT.pdf?hsLang=en-us).
 
 ### Configuration Guides
 A NIST National Checklist for Ansible Tower is currently being developed. Contact your Red Hat
