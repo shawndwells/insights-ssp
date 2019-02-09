@@ -59,12 +59,28 @@ FIPS 140-2 evaluations. To mitigate this, consider using Opportunistic IPSec
 which encapsulates all traffic in OpenSSL tunnels (meeting the requirement for
 encryption in transit).
 
-### USGv6 / IPv6
+## USGv6 / IPv6
 OpenShift Container Platform 3.x does not have any US Government IPv6 certifications.
 
-### Section 508 / VPAT
+## Section 508 / VPAT
 Coming soon.
 
-### Configuration Guides
+## Configuration Guides
 A NIST National Checklist for OpenShift Container Platform 3.x is currently being developed. Contact your Red Hat
 representative for pre-release access!
+
+## Risk Register
+To assist with risk management decisions, a listing of known OpenShift limitations against NIST 800-53 rev4 controls is provided below. Limitations are categorized as high/medium/low severity in alignment with DISA's Vulnerability Severity Category Code Definitions:
+
+|                 | DISA Category Code Guidelines |
+|:---------------:|:------------------------------|
+| HIGH (CAT I) | Any vulnerability, the exploitation of which will directly and immediately result in loss of Confidentiality, Availability, or Integrity.|
+| MEDIUM (CAT II) | Any vulnerability, the exploitation of which has a potential to result in loss of Confidentiality, Availability, or Integrity.|
+| LOW (CAT III) | Any vulnerability, the existence of which degrades measures to protect against loss of Confidentiality, Availability, or Integrity.|
+
+The following are known limitations of OpenShift 3.x's ability to meet NIST 800-53 rev4 technical controls:
+
+| NIST 800-53 Control | Risk Determination | Description/Rationale |
+|:-------------------:|:------------------:|:---------------------------|
+| AC-7(b) | LOW | AC-7(b) requires that, upon exceeding consecutive failed logon attempt limits, the information system delays the next logon prompt by a selected amount of time. This capability is not present in OpenShift 3.x nor is it planned. If this capability is
+meaningful for your deployment, please open a feature request through your Red Hat account team.|
