@@ -17,8 +17,8 @@ subnav:
   href: '#section-508'
 - text: '&mdash; Configuration Guides'
   href: '#configuration-guides'
-- text: '&mdash; ICS 500-27 Audit Data Standard'
-  href: '#ics-500-27-audit-data-standard'
+- text: '&mdash; Risk Register'
+  href: '#risk-register'
 ---
 
 OpenShift Container Platform 3.x Overview
@@ -82,5 +82,4 @@ The following are known limitations of OpenShift 3.x's ability to meet NIST 800-
 
 | NIST 800-53 Control | Risk Determination | Description/Rationale |
 |:-------------------:|:------------------:|:---------------------------|
-| AC-7(b) | LOW | AC-7(b) requires that, upon exceeding consecutive failed logon attempt limits, the information system delays the next logon prompt by a selected amount of time. This capability is not present in OpenShift 3.x nor is it planned. If this capability is
-meaningful for your deployment, please open a feature request through your Red Hat account team.|
+| AC-7(b) | LOW | AC-7(b) requires that, upon exceeding consecutive failed logon attempt limits, the information system delays the next logon prompt by a selected amount of time. This capability is not present in OpenShift 3.x nor is it planned. If this capability is meaningful for your deployment, please open a feature request through your Red Hat account team.|
