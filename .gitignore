@@ -1,0 +1,14 @@
+.DS_store
+.jekyll-metadata
+.*.swp
+_site/
+.sass-cache/
+node_modules/
+npm-debug.log
+.bundle/
+assets/
+.jekyll_get_cache/
+_data/certifications/
+_data/components/
+_data/standards/
+_data/opencontrols/

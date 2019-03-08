@@ -1,0 +1,73 @@
+primary:
+  - href: /getting-started/
+  - href: /ato-documents/
+  - href: /product-documents/
+
+mobile:
+  - href: /getting-started/
+    collapsible: true
+  - href: /ato-documents/
+  - href: /product-documents/
+    collapsible: true
+
+Product Documents:
+  - text: Overview
+    href: /product-documents/
+#  - text: RHEL6
+#    href: /product-documents/rhel6/
+#  - text: RHEL7
+#    href: /product-documents/rhel7/
+  - text: Ansible Tower
+    href: /product-documents/ansible-tower/
+  - text: OpenShift Container Platform 3.x
+    href: /product-documents/ocp3/
+  - text: OpenStack Platform 13
+    href: /product-documents/osp13/
+  - text: Red Hat Virtualization Host
+    href: /product-documents/rhvh/
+  - text: Red Hat Virtualization Manager
+    href: /product-documents/rhvm/
+
+ATO Documents:
+  - text: Overview
+    href: /ato-documents/
+  - text: Vulnerability Management Plan
+    href: /ato-documents/vulnerability-management-plan/
+  - text: Security Awareness & Training Plan
+    href: /ato-documents/security-awareness-and-training-plan/
+
+UI components:
+  - text: Overview
+    href: /components/
+  - href: /components/typography/
+  - href: /components/colors/
+  - href: /components/accessibility/
+  - href: /components/grids/
+  - href: /components/buttons/
+  - href: /components/labels/
+  - href: /components/tables/
+  - href: /components/alerts/
+  - href: /components/accordions/
+  - href: /components/form-controls/
+  - href: /components/form-templates/
+  - href: /components/search-bar/
+  - href: /components/sidenav/
+  - href: /components/headers/
+  - href: /components/footers/
+
+Getting started:
+  - text: Overview
+    href: /getting-started/
+  - href: /getting-started/auditors/
+  - href: /getting-started/administrators/
+
+Page templates:
+  - href: /page-templates/
+
+What’s new:
+  - text: Overview
+    href: /whats-new/
+  - href: /whats-new/releases/
+  - href: /whats-new/updates/
+  - href: /whats-new/product-roadmap/
+  - href: /whats-new/research/
