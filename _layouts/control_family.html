@@ -1,0 +1,288 @@
+---
+layout: default
+---
+
+{% capture opencontrol_component %}{{ page.product_info.opencontrol_component }}{% endcapture %}
+{% capture control_family_shorthand %}{{ page.product_info.control_family_shorthand }}{% endcapture %}
+{% capture name %}{{ page.product_info.name }}{% endcapture %}
+
+
+<!-- Create an array of 'opencontrol_component' responses against the 'control_family'
+  Returns data array such as:
+
+  control_responses[0]: {"control_key"=>"AC-1", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
+  
+  control_responses[1]: {"control_key"=>"AC-2", "standard_key"=>"NIST-800-53", "covered_by"=>[], "implementation_status"=>"not applicable", "narrative"=>[{"text"=>"narrative response"}]}
+--> 
+{% assign control_responses = site.data.components[opencontrol_component] %}
+
+
+<!-- Create an array of controls known NOT to have a control response. 
+  This is done by merging nist_controls with control_responses and de-duplicating
+  NIST 800-53 keys -->
+
+
+<aside class="sidenav sticky">
+  {% assign sidenav = site.data.nav[page.category] %}
+  {% if sidenav %}
+  <ul class="usa-sidenav-list">
+    {% for link in site.data.nav[page.category] %}
+      {% if link.href %}
+        {% assign _page = link.href | resolve_permalink %}
+      {% else %}
+        {% assign _page = nil %}
+      {% endif %}
+      <li>
+      {% if _page %}
+        {% include nav/current.html page=_page %}
+          <a href="{{ _page.url | relative_url }}"{%
+            if _current %} class="usa-current"{% endif %}>
+            {% unless sidenav %}<span>{% endunless %}
+            {{ include.text | default: _page.title | smartify }}
+            {% unless sidenav %}</span>{% endunless %}
+          </a>
+        {% if _current %}
+          {% unless include.flat %}
+            {% assign _href_key = include.href_key %}
+            {% assign _text_key = include.href_key %}
+            {% assign _sublinks = link.links | default: _page.subnav %}
+          {% if _sublinks.data %}
+            {% assign _href_key = _sublinks.href %}
+            {% assign _text_key = _sublinks.text %}
+            {% assign _data_key = _sublinks.data %}
+            {% assign _sublinks = site.data[_data_key] %}
+
+          {% elsif _sublinks.type %}
+            {% assign _sublinks = nil %}
+          {% endif %}
+          {% if _sublinks %}
+            <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">
+            {% for slink in _sublinks %}
+              {% if slink.href %}
+                {% assign _subpage = slink.href | resolve_permalink %}
+              {% else %}
+                {% assign _subpage = nil %}
+              {% endif %}
+              <li>
+                {% if _subpage %}
+                  {%
+                    include nav/page-item.html
+                    page=_subpage
+                    rel=include.rel
+                    flat=include.flat
+                    links=slink.sublinks
+                    subnav_class=include.subnav_class
+                    text=slink.text
+                  %}
+                  {% for control_response in control_responses.satisfies %}
+                    {% if slink.text contains control_family_shorthand %}
+                      {% if control_response.control_key contains control_family_shorthand %}
+                        <ul class="usa-sidenav-sub_list">
+			  <ul class="usa-sidenav-sub_list">
+                            <li>
+		              <a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a>
+			    </li>
+                          </ul>
+			</ul>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% include nav/link-item.html
+                    link=slink
+                    subnav_class=include.subnav_class
+                    href_key=include.href_key
+                    text_key=include.text_key
+                  %}
+                {% endif %}
+              </li>
+            {% endfor %}
+	  </ul>
+          {% endif %}
+          {% endunless %}
+        {% endif %}
+
+      {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+    </header>
+
+    {% include lead.html text=page.lead %}
+
+    <br /><br />
+
+<!-- BEGIN CONTROL SUMMARY TABLE -->
+<h2>
+  <center>Requirements Traceability Matrix</center>
+</h2>
+    <center>
+      <table width="85%">
+        <thead>
+          <tr>
+            <th>Control</th> 
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        {% for control_response in control_responses.satisfies %}
+          {% if control_response.control_key contains control_family_shorthand %}
+            <tr>
+              <td><a href="#{{ control_response.control_key }}">{{ control_response.control_key }}</a></td>
+              <td>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</td>
+              <td>
+                <center>
+                  {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
+                  <div class="usa-alert usa-alert-success" >
+                  {% elsif control_response.implementation_status == 'partial' %}
+                  <div class="usa-alert usa-alert-warning" >
+                  {% elsif control_response.implementation_status == 'planned' %}
+                  <div class="usa-alert usa-alert-info" > 
+                  {% else %} 
+                  <div class="usa-alert usa-alert-error" role="alert" > 
+                  {% endif %} 
+                    <div class="usa-alert-body">
+                       <p class="usa-alert-text">{{ control_response.implementation_status }}</p>
+                    </div>
+                  </div>
+                </center>
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </table>
+    </center>
+<!-- BEGIN CONTROL SUMMARY TABLE -->
+
+<!-- BEGIN CONTROL RESPONSE TABLE -->
+    {% for control_response in site.data.components[opencontrol_component].satisfies %}
+      {% if control_response.control_key contains control_family_shorthand %}
+      <div class="usa-grid" id="{{ control_response.control_key }}">
+        <br /><hr class="homepage-rule center-diamond" /><br />
+      </div>
+
+      <div class="alignment-example" align="center">
+        <h2>{{ control_response.control_key }}: {{ site.data.standards.nist-800-53-rev4[control_response.control_key].name }}</h2>
+        <h4>{{ site.data.standards.nist-800-53-rev4[control_response.control_key].description | markdownify }}</h4>
+      </div>
+
+    <center>
+    <table width="85%">
+      <thead>
+        <tr>
+          <th scope="row">
+            <strong>
+              <center>
+                {{ control_response.control_key }} Control Response Information
+              </center>
+            </strong>
+          </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>
+          <b>Implementation Status: </b> 
+          {% if control_response.implementation_status == 'complete' or control_response.implementation_status == 'not applicable' %}
+          <div class="usa-alert usa-alert-success" >
+          {% elsif control_response.implementation_status == 'partial' %}
+          <div class="usa-alert usa-alert-warning" >
+          {% elsif control_response.implementation_status == 'planned' %}
+          <div class="usa-alert usa-alert-info" > 
+          {% else %} 
+          <div class="usa-alert usa-alert-error" role="alert" > 
+          {% endif %} 
+            <div class="usa-alert-body">
+              <p class="usa-alert-text">{{ control_response.implementation_status }}</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!--<tr>
+        <td>Control Origination:
+          <ul>
+            <li>Provided By Customer (Customer System Specific)</li>
+            <li>Shared (Service Provider and Customer Responsibility)</li>
+          </ul>
+          There should be a checklist here:
+          <fieldset>
+      
+        <div>
+            <input type="checkbox" id="Service_Provider_Corporate" name="origination"
+                   value="Service_Provider_Corporate" checked />
+            <label for="Service_Provider_Corporate">Service Provider Corporate</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_System_Specific" name="origination"
+                   value="Service_Provider_System_Specific" />
+            <label for="Service_Provider_System_Specific">Service Provider System Specific</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Configured_By_Customer" name="origination"
+                   value="Configured_By_Customer" />
+            <label for="Configured_By_Customer">Configured By Customer (Customer System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Service_Provider_Hybrid" name="origination"
+                   value="Service_Provider_Hybrid" />
+            <label for="Service_Provider_Hybrid">Service Provider Hybrid (Corporate and System Specific)</label>
+        </div>
+
+    </fieldset>
+        </td>
+      </tr> -->
+    </table>
+
+    <table width="85%">
+      <thead>
+        <tr>
+          <th>{{ control_response.control_key }}: What is the solution and how is it implemented?</th>
+        </tr>
+      </thead>
+      {% for key in control_response.narrative %}
+      <tr>
+        <td>
+          {% if key.key != null %}
+          <b>{{ control_response.control_key }}({{ key.key }}):</b>
+          {% endif %}
+          {{ key.text | markdownify  | replace: '\n', '<br />' | replace: "'", '<p>' | replace: "'", '</p>' }}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </center>
+    {% endif %}
+    {% endfor %}
+
+    <!-- END CONTROL RESPONSE LOOP -->
+
+  </div> <!-- end styleguide-content. This should be 2nd to last tag on template -->
+</main> <!-- end main-content. This should be the last tag on template page -->

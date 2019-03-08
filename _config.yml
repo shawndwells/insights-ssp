@@ -1,0 +1,79 @@
+# Site settings
+title:  Red Hat's ATO Pathways
+description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
+google_analytics_ua: UA-122701391-1
+components_url: 'https://components.designsystem.digital.gov'
+host: "0.0.0.0"
+port: 8080
+
+# this is for pages that don't have a permalink (primarily posts)
+permalink: /whats-new/updates/:year/:month/:day/:title/
+
+# this ensure that posts with future dates are published
+future: true
+
+encoding: 'utf-8'
+
+incremental: false
+
+incremental_regeneration_fixer:
+  interdependent_files:
+    - "_components/colors/*"
+    - "_components/form-controls/*"
+    - "_components/form-templates/*"
+    - "_components/typography/*"
+
+jekyll_get:
+  - data: releases
+    json: 'https://api.github.com/repos/RedHatGov/ato-pathways/releases'
+  - data: contributing
+    json: 'https://api.github.com/repos/RedHatGov/ato-pathways/contents/CONTRIBUTING.md'
+    decode_content: true
+
+repos:
+- name: Red Hat's ATO Pathways
+  description: Main GitHub repository
+  url: https://github.com/RedHatGov/ato-pathways
+
+sass:
+  load_paths:
+    - css
+    - assets/css
+
+collections:
+  components:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: components
+    values:
+      layout: component
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+
+gems:
+  - jekyll-redirect-from
+  - octopress-autoprefixer
+
+exclude:
+  - ".ruby-version"
+  - ".sass-cache"
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - config
+  - js
+  - vendor
+  - manifest.yml
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - circle.yml
